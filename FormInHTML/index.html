@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form in HTML</title>
+</head>
+<body>
+    <!-- form tag used for sign in or login form -->
+    <form action="/action.php">
+        <h3>Registration Form</h3>
+        <!-- input tag used for input -->
+        <h>Enter your name</h>
+        <input type="text" placeholder="username">
+        <br/> <br/>
+        <h>Enter your password</h>
+        <input type="password" placeholder="password">
+        <br/> <br/>
+
+        <h>Choose your gender</h>
+        <label for="101">
+            <!-- radio button used for choose one  -->
+            <input type="radio" value="Male" name="class" id="101">Male
+        </label>
+        <label for="102">
+            <input type="radio" value="Female" name="class" id="102">Female
+        </label>
+
+        <!-- Id and Class -->
+        <div id="id1" class="group1">
+            <p>I am paragraph of id1.</p>
+        </div>
+        <div id="id2" class="group1">
+            <p>I am paragraph of id2.</p>
+        </div>
+        
+        <h>Check your favourate subject</h>
+        <!-- Checkbox -->
+        <label for="math">
+            <!-- checkbox button used for choose one box -->
+            <input type="checkbox" value="math" name="class" id="101">Math
+        </label>
+        <label for="phy">
+            <input type="checkbox" value="phy" name="class" id="102">Physics
+        </label>
+        <label for="chem">
+            <input type="checkbox" value="chem" name="class" id="103">Chemistry
+        </label>
+        <br/> <br/>
+
+        <h>Select your city</h>
+       
+        <!-- select tag used to select something -->
+        <select name="city">
+            <!-- option tag used for give the options -->
+            <option value="ksr">Kasur</option>
+            <option value="lhr">Lahore</option>
+            <option value="isb">Islamabad</option>
+            <option value="slkt">Sialkot</option>
+        </select>
+        <br/> <br/>
+
+        <h>Feedback</h>
+        <br/> <br/>
+        <!-- textarea tag used for input a data in paragrpah  -->
+        <textarea name="feedback" id="1001" placeholder="Please give your valueable feedback here" rows="5"></textarea>
+        <br/> <br/>
+
+        <input type="submit" name="Submit" >
+        
+    </form>
+</body>
+</html>
+
+<style>
+    .group1{
+        color:blue;
+    }
+
+    #id1{
+        background-color: lightblue;
+    }
+    #id2{
+        background-color: yellow;
+    }
+</style>
